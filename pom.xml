@@ -10,6 +10,11 @@
     <name>NutzJetty</name>
     <url>https://github.com/zhmhbest/NutzJetty.git</url>
 
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.nutz</groupId>
@@ -31,12 +36,8 @@
             <artifactId>tomcat-servlet-api</artifactId>
             <version>7.0.47</version>
         </dependency>
-        <!--<dependency>-->
-        <!--    <groupId>org.apache.tomcat</groupId>-->
-        <!--    <artifactId>tomcat-catalina</artifactId>-->
-        <!--    <version>7.0.47</version>-->
-        <!--</dependency>-->
     </dependencies>
+
     <build>
         <finalName>${project.artifactId}</finalName>
         <plugins>
@@ -56,4 +57,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
