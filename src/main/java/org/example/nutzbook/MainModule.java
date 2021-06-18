@@ -11,6 +11,6 @@ import org.nutz.mvc.annotation.*;
         "*tx",                                  // 事务拦截AOP
         "*async"                                // 异步执行AOP
 })
-@Modules(scanPackage=true)
+// @Modules(scanPackage=true)
+@Modules()
 public class MainModule { }
-// http://127.0.0.1:8080/nutzbook/

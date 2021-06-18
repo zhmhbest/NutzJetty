@@ -5,6 +5,7 @@ import org.nutz.ioc.Ioc;
 import org.nutz.mvc.NutConfig;
 import org.nutz.mvc.Setup;
 public class Initializations implements Setup {
+    @Override
     public void init(NutConfig nc) {
         // 若不存在，创建所有数据表
         final String scanPackageName = Initializations.class.getPackage().getName() + ".model";
@@ -19,5 +20,6 @@ public class Initializations implements Setup {
             dao.insert(user);
         }
     }
+    @Override
     public void destroy(NutConfig nc) { }
 }

@@ -6,6 +6,7 @@ import org.nutz.ioc.loader.annotation.Inject;
 import org.nutz.ioc.loader.annotation.IocBean;
 import org.nutz.mvc.annotation.*;
 import javax.servlet.http.HttpSession;
+
 @IocBean
 @At("/user")
 public class UserController {

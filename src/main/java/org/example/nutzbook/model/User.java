@@ -1,5 +1,6 @@
 package org.example.nutzbook.model;
 import org.nutz.dao.entity.annotation.*;
+
 @Table("tbl_user")
 public class User {
     @Id
