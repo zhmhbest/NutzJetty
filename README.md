@@ -5,7 +5,7 @@
 ## 初始化数据库
 
 ```bash
-mysql -uroot
+mysql -uroot -proot
 ```
 
 ```SQL
@@ -19,5 +19,6 @@ GRANT ALL PRIVILEGES ON `nutzbook`.* TO 'nutz'@'localhost';
 
 ```bash
 mvn jetty:run
-# http://localhost:8080/nutzbook/
 ```
+
+- <http://localhost:8080/nutzbook/>
