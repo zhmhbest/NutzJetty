@@ -1,10 +1,12 @@
 package org.example.nutzbook.controller;
+
 import org.example.nutzbook.model.User;
 import org.nutz.dao.Cnd;
 import org.nutz.dao.Dao;
 import org.nutz.ioc.loader.annotation.Inject;
 import org.nutz.ioc.loader.annotation.IocBean;
 import org.nutz.mvc.annotation.*;
+
 import javax.servlet.http.HttpSession;
 
 @IocBean
@@ -16,13 +18,13 @@ public class UserController {
     @At
     @Ok(">>:/user/profile")
     public Boolean login(
-        @Param("name") String name,
-        @Param("password") String password,
-        HttpSession session
+            @Param("name") String name,
+            @Param("password") String password,
+            HttpSession session
     ) {
         User user = dao.fetch(
-            User.class,
-            Cnd.where("name", "=", name).and("password", "=", password)
+                User.class,
+                Cnd.where("name", "=", name).and("password", "=", password)
         );
         if (null != user) {
             session.setAttribute("name", user.getName());

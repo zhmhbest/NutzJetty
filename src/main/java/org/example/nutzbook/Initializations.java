@@ -1,9 +1,11 @@
 package org.example.nutzbook;
+
 import org.nutz.dao.Dao;
 import org.nutz.dao.util.Daos;
 import org.nutz.ioc.Ioc;
 import org.nutz.mvc.NutConfig;
 import org.nutz.mvc.Setup;
+
 public class Initializations implements Setup {
     @Override
     public void init(NutConfig nc) {
@@ -20,6 +22,8 @@ public class Initializations implements Setup {
             dao.insert(user);
         }
     }
+
     @Override
-    public void destroy(NutConfig nc) { }
+    public void destroy(NutConfig nc) {
+    }
 }
